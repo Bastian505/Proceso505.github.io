@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+}
+
+#container, #nombresContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.line-button, .nombre-element {
+    background-color: #20eaa7; /* Color de fondo */
+    color: white; /* Color de texto */
+    border-radius: 12px; /* Bordes suavizados */
+    margin: 5px;
+    padding: 12px;
+    cursor: pointer;
+    
+}
+
+.selected {
+    background-color: #971c1c !important;
+    color: #fff;
+    border-radius: 6px; /* Bordes suavizados */
+    padding: 12px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo */
+}
+
+.disabled {
+    background-color: #ccc !important;
+    color: #ffffff;
+    border-radius: 6px; /* Bordes suavizados */
+    padding: 12px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo */
+}
+
+
+#boton {
+    background-color: #015681;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el textarea y el botón */
+}
+
+#agregarNombreBtn {
+    background-color: #015681;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el textarea y el botón */
+}
+
+#procesarBtn {
+    background-color: #015681;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el textarea y el botón */
+}
+
+#guardarBtn {
+    background-color: #015681;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el textarea y el botón */
+}
+
+#nombreInput {
+    background-color: #ffffff; /* Color de fondo plomo suave */
+    border-radius: 10px; /* Bordes suavizados */
+    border-color: rgb(193, 193, 193);
+    padding: 8px; /* Espaciado interno para hacer el input más grande */
+    font-size: 16px;
+}
+
+.nombre-element {
+    background-color: #20eaa7; /* Color de fondo */
+    color: white; /* Color de texto */
+    border-radius: 6px; /* Bordes suavizados */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre el nombre */
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+
+}
+
+td {
+    background-color: #ffffff;
+    border-radius: 2px; /* Bordes suavizados */
+    padding: 8px;
+}
+
+
+th {
+    background-color: #399df5;
+    color: #ffffff;
+    border-radius: 2px; /* Bordes suavizados */
+    padding: 8px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textarea con botones seleccionables</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <textarea id="inputTextarea" rows="20" cols="50"></textarea>
+    <br>
+    <button id="procesarBtn">Procesar</button>
+    <section class="Agregarnombres">
+        <H1>PASO 3: INGRESA EL NOMBRE DE TUS AMIGOS</H1>
+        <input type="text" id="nombreInput" placeholder="Ingrese un nombre">
+        <button id="agregarNombreBtn">Agregar Nombre</button>
+    </section>
+    <section class="Seleccion">
+        <H1>PASO 4: SELECCIONA TU NOMBRE Y LO QUE CONSUMISTE</H1>
+        <div id="nombresContainer"></div>
+        <div id="container"></div>
+        <button id="guardarBtn" disabled>Guardar</button>
+    </section>
+    <section class="Total">
+        <H1>PASO 5: VISUALIZA TU TOTAL</H1>
+        <div id="totalesContainer"></div>
+        <script src="script2.js"></script>
+    </section>
+</body>
+</html>
