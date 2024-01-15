@@ -11,16 +11,16 @@ body {
 
 #container, #nombresContainer {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: auto;
 }
 
 .line-button, .nombre-element {
     background-color: #20eaa7; /* Color de fondo */
     color: white; /* Color de texto */
-    border-radius: 12px; /* Bordes suavizados */
-    margin: 5px;
-    padding: 12px;
+    border-radius: 6px; /* Bordes suavizados */
+    margin: 0.2vw;
+    padding: 0.5vw;
     cursor: pointer;
     
 }
@@ -29,16 +29,16 @@ body {
     background-color: #971c1c !important;
     color: #fff;
     border-radius: 6px; /* Bordes suavizados */
-    padding: 12px; /* Espaciado interno */
-    margin: 5px; /* Espaciado externo */
+    padding: 0.5vw; /* Espaciado interno */
+    margin: 0.2vw; /* Espaciado externo */
 }
 
 .disabled {
     background-color: #ccc !important;
     color: #ffffff;
     border-radius: 6px; /* Bordes suavizados */
-    padding: 12px; /* Espaciado interno */
-    margin: 5px; /* Espaciado externo */
+    padding: 0.5vw; /* Espaciado interno */
+    margin: 0.2vw; /* Espaciado externo */
 }
 
 
@@ -117,4 +117,22 @@ th {
     color: #ffffff;
     border-radius: 2px; /* Bordes suavizados */
     padding: 8px;
+}
+
+@media (max-width: 600px) {
+    #container, #nombresContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line-button, .nombre-element {
+        padding: 0.2em;
+        margin: 0.2em;
+        font-size: 0.8em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto;
+    }
 }
